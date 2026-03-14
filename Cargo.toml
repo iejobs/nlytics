@@ -1,0 +1,24 @@
+[package]
+name = "nlytics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+redis = "0.24" # Или новее
+deadpool-redis = "0.14" # Пул соединений для async
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.7", features = ["postgres", "uuid", "runtime-tokio-rustls", "macros", "json"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+dotenv = "0.15"
+hmac = "0.12"               # https://crates.io/crates/hmac
+sha2 = "0.10"               # для HmacSha256
+base64 = "0.21"
+futures-util = "0.3"
+futures = "0.3"
+bytes = "1.4"
+anyhow = "1.0.102"
+actix-cors = "0.7.1"  # для BytesMut
+async-trait = "0.1"
