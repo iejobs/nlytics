@@ -30,7 +30,7 @@ A lightweight, high-performance event analytics backend built with Rust. Designe
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/nlytics.git
+git clone https://github.com/iejobs/nlytics.git
 cd nlytics
 ```
 
